@@ -7,4 +7,26 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Icons\back.png" />
+    <None Remove="Icons\backPage.png" />
+    <None Remove="Icons\backThin.png" />
+    <None Remove="Icons\history.png" />
+    <None Remove="Icons\rootX.png" />
+    <None Remove="Icons\rootXThin.png" />
+    <None Remove="Icons\sidebar.png" />
+    <None Remove="Icons\sidebarPressed.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\back.png" />
+    <Resource Include="Icons\backPage.png" />
+    <Resource Include="Icons\backThin.png" />
+    <Resource Include="Icons\history.png" />
+    <Resource Include="Icons\rootX.png" />
+    <Resource Include="Icons\rootXThin.png" />
+    <Resource Include="Icons\sidebar.png" />
+    <Resource Include="Icons\sidebarPressed.png" />
+  </ItemGroup>
+
 </Project>
