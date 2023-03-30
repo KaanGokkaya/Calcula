@@ -8,25 +8,32 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Icons\back.png" />
-    <None Remove="Icons\backPage.png" />
-    <None Remove="Icons\backThin.png" />
-    <None Remove="Icons\history.png" />
-    <None Remove="Icons\rootX.png" />
-    <None Remove="Icons\rootXThin.png" />
-    <None Remove="Icons\sidebar.png" />
-    <None Remove="Icons\sidebarPressed.png" />
+    <Compile Remove="Icons\**" />
+    <EmbeddedResource Remove="Icons\**" />
+    <None Remove="Icons\**" />
+    <Page Remove="Icons\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Icons\back.png" />
-    <Resource Include="Icons\backPage.png" />
-    <Resource Include="Icons\backThin.png" />
-    <Resource Include="Icons\history.png" />
-    <Resource Include="Icons\rootX.png" />
-    <Resource Include="Icons\rootXThin.png" />
-    <Resource Include="Icons\sidebar.png" />
-    <Resource Include="Icons\sidebarPressed.png" />
+    <None Remove="Assets\back.png" />
+    <None Remove="Assets\backPage.png" />
+    <None Remove="Assets\backThin.png" />
+    <None Remove="Assets\history.png" />
+    <None Remove="Assets\rootX.png" />
+    <None Remove="Assets\rootXThin.png" />
+    <None Remove="Assets\sidebar.png" />
+    <None Remove="Assets\sidebarPressed.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\back.png" />
+    <Resource Include="Assets\backPage.png" />
+    <Resource Include="Assets\backThin.png" />
+    <Resource Include="Assets\history.png" />
+    <Resource Include="Assets\rootX.png" />
+    <Resource Include="Assets\rootXThin.png" />
+    <Resource Include="Assets\sidebar.png" />
+    <Resource Include="Assets\sidebarPressed.png" />
   </ItemGroup>
 
 </Project>
