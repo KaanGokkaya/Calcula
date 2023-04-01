@@ -6,9 +6,14 @@
         xmlns:local="clr-namespace:Calcula"
         mc:Ignorable="d"
         Title="Calcula"
-        Height="740"
-        Width="475">
-    
+        Height="755"
+        Width="475"
+        Background="#0F0F0F"
+        WindowStyle="SingleBorderWindow"
+        WindowState="Normal"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+
     <Grid>
         
     </Grid>

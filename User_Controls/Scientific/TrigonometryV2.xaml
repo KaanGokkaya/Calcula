@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="Calcula.User_Controls.Scientific.TrigonometryV2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Calcula.User_Controls.Scientific"
+             mc:Ignorable="d" 
+             d:DesignHeight="85"
+             d:DesignWidth="461">
+
+    <Grid>
+        <Border CornerRadius="4,4,4,4" BorderThickness="1" BorderBrush="#A5A5A5" Background="#191919"
+                Width="425" Height="85" Margin="0,0,36,0" ></Border>
+        <!--#region Buttons-->
+        <Button x:Name="btnSecond" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="13" FontWeight="Bold" Margin="5,5,391,45">Second</Button>
+        <Button x:Name="btnSin1" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="15" Margin="75,5,321,45">sin⁻¹</Button>
+        <Button x:Name="btnTan1" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="15" Margin="145,5,251,45">tan⁻¹</Button>
+        <Button x:Name="btnCsc1" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="15" Margin="215,5,181,45">csc⁻¹</Button>
+        <Button x:Name="btnSinh1" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="15" Margin="285,5,111,45">sinh⁻¹</Button>
+        <Button x:Name="btnTanh1" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="15" Margin="355,5,41,45">tanh⁻¹</Button>
+        <Button x:Name="btnHyp" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="15" Margin="5,45,391,5">hyp</Button>
+        <Button x:Name="btnCos1" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="15" Margin="75,45,321,5">cos⁻¹</Button>
+        <Button x:Name="btnSec1" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="15" Margin="145,45,251,5">sec⁻¹</Button>
+        <Button x:Name="btnCot1" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="15" Margin="215,45,181,5">cot⁻¹</Button>
+        <Button x:Name="btnCosh1" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="15" Margin="285,45,111,5">cosh⁻¹</Button>
+        <!--#endregion-->
+        <Border Width="65" Height="35" Background="#0F0F0F" CornerRadius="4,4,4,4" BorderThickness="0" Margin="355,45,41,5"></Border>
+    </Grid>
+</UserControl>
