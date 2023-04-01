@@ -17,7 +17,6 @@
   <ItemGroup>
     <None Remove="Assets\back.png" />
     <None Remove="Assets\backPage.png" />
-    <None Remove="Assets\backThin.png" />
     <None Remove="Assets\ceilX.png" />
     <None Remove="Assets\CubicRootX.png" />
     <None Remove="Assets\floorX.png" />
@@ -32,7 +31,6 @@
   <ItemGroup>
     <Resource Include="Assets\back.png" />
     <Resource Include="Assets\backPage.png" />
-    <Resource Include="Assets\backThin.png" />
     <Resource Include="Assets\ceilX.png" />
     <Resource Include="Assets\CubicRootX.png" />
     <Resource Include="Assets\floorX.png" />
