@@ -21,6 +21,8 @@ namespace Calcula
         public MainWindow()
         {
             InitializeComponent();
+
+            tt.NavigationService.Navigate(new Standart());
         }
     }
 }

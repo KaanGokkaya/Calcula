@@ -10,15 +10,16 @@
       Title="Scientific">
 
     <Grid>
-        <UserControl x:Name="complicateOperation" Width="89" Height="384" Margin="5,348,381,8"></UserControl>
-        <UserControl x:Name="TrigonoAndFunc" Width="461" Height="85" Margin="7,315,7,340"></UserControl>
+        <UserControl Panel.ZIndex="1" x:Name="complicateOperation" Width="89" Height="384" Margin="5,348,381,8"></UserControl>
+        <UserControl Panel.ZIndex="2" x:Name="trigonoAndFunc" Width="461" Height="85" Margin="7,315,7,340"></UserControl>
+        <UserControl Panel.ZIndex="10" x:Name="sidebar" Width="250" Height="740" HorizontalAlignment="Left"></UserControl>
         
         <!--#region UI-->
         <!--#region Name-->
 
         <!--Page names must be x = 65, y = 22 everytime-->
 
-        <Label x:Name="pageNameScientific" Style="{DynamicResource PageName}" Margin="65,22,316,687">Scientific</Label>
+        <Label x:Name="pageNameScientific" Style="{DynamicResource PageName}" Margin="65,23,316,686">Scientific</Label>
         
         <!--#endregion-->
         <!--#region Result Side-->
@@ -33,7 +34,7 @@
         <!--#endregion-->
         <!--#region Buttons-->
         <!--#region Top Button-->
-        <Button x:Name="btnHistory" Style="{DynamicResource topButtonT}" Margin="390,20,10,690">History</Button>
+        <Button x:Name="btnHistory" Style="{DynamicResource topButtonT}" Margin="390,25,10,685">History</Button>
         <!--#endregion-->
         <!--#region Mind Buttons-->
         <Button x:Name="btnMC" Style="{DynamicResource mindButtonT}" Margin="7,250,397,460">MC</Button>
@@ -90,7 +91,7 @@
         <Button x:Name="btnCE" Style="{DynamicResource calculateButtonT}" Height="48" Width="89" Margin="193,348,193,344" FontSize="18">CE</Button>
         <Button x:Name="btnC" Style="{DynamicResource calculateButtonT}" Height="48" Width="89" Margin="287,348,99,344" FontSize="18">C</Button>
         <Button x:Name="btnBack" Style="{DynamicResource calculateButtonT}" Height="48" Width="89" Margin="381,348,5,344">
-            <Image Source="C:\Users\Acer\Desktop\OUTFUN\VS\Calcula\Assets\back.png" Height="12"></Image>
+            <Image Source="\Assets\back.png" Height="12"></Image>
         </Button>
         <!--#endregion-->
         <!--#region Others-->
@@ -107,7 +108,7 @@
         <Button x:Name="btnFirst" Style="{DynamicResource calculateButtonT}" Width="89" Height="48" FontSize="13" FontWeight="Bold" Margin="5,348,381,344">First</Button>
         <Button x:Name="btnSquareX" Style="{DynamicResource calculateButtonT}" Width="89" Height="48" FontSize="18" Margin="5,404,381,288">x²</Button>
         <Button x:Name="btnRootX" Style="{DynamicResource calculateButtonT}" Width="89" Height="48" Margin="5,460,381,232">
-            <Image Source="C:\Users\Acer\Desktop\OUTFUN\VS\Calcula\Assets\rootX.png" Width="17" Height="16"></Image>
+            <Image Source="\Assets\rootX.png" Width="17" Height="16"></Image>
         </Button>
         <Button x:Name="btnXPowerY" Style="{DynamicResource calculateButtonT}" Width="89" Height="48" FontSize="18" Margin="5,516,381,176">xʸ</Button>
         <Button x:Name="btnTenX" Style="{DynamicResource calculateButtonT}" Width="89" Height="48" FontSize="18" Margin="5,572,381,120">10ˣ</Button>
@@ -117,5 +118,10 @@
         <!--#endregion-->
         <!--#endregion-->
         <!--#endregion-->
+        
+        <!--SideBar Button-->
+        <Button x:Name="btnSidebar" Style="{DynamicResource calculateButtonT}" Width="40" Height="40" Margin="15,20,420,680" Click="btnSidebarClicked">
+            <Image Source="\Assets\sidebar.png" Height="10" Width="13"></Image>
+        </Button>
     </Grid>
 </Page>

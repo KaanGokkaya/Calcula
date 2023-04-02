@@ -14,10 +14,10 @@
         <!--#region Buttons-->
         <Button x:Name="btnAbsolute" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="18" Margin="251,5,145,45">|x|</Button>
         <Button x:Name="btnFloor" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="18" Margin="321,5,75,45">
-            <Image Source="C:\Users\Acer\Desktop\OUTFUN\VS\Calcula\Assets\floorX.png" Width="29" Height="23"></Image>
+            <Image Source="\Assets\floorX.png" Width="29" Height="23"></Image>
         </Button>
         <Button x:Name="btnCeil" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="18" Margin="391,5,5,45">
-            <Image Source="C:\Users\Acer\Desktop\OUTFUN\VS\Calcula\Assets\ceilX.png" Width="29" Height="23"></Image>
+            <Image Source="\Assets\ceilX.png" Width="29" Height="23"></Image>
         </Button>
         <Button x:Name="btnRand" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="18" Margin="251,45,145,5">rand</Button>
         <Button x:Name="btnDms" Style="{DynamicResource calculateButtonT}" Width="65" Height="35" FontSize="18" Margin="321,45,75,5">→dms</Button>

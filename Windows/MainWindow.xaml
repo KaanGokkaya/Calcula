@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:Calcula"
         mc:Ignorable="d"
         Title="Calcula"
-        Height="755"
-        Width="475"
+        Height="779"
+        Width="491"
         Background="#0F0F0F"
         WindowStyle="SingleBorderWindow"
         WindowState="Normal"
@@ -15,6 +15,6 @@
         ResizeMode="CanMinimize">
 
     <Grid>
-        
+        <Frame x:Name="tt"></Frame>
     </Grid>
 </Window>

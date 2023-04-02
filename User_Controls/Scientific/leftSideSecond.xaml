@@ -12,10 +12,10 @@
         <Button x:Name="btnSecond" Style="{DynamicResource calculateButtonT}" Width="89" Height="48" FontSize="13" FontWeight="Bold" Margin="0,0,0,336">Second</Button>
         <Button x:Name="btnCubeX" Style="{DynamicResource calculateButtonT}" Width="89" Height="48" FontSize="18" Margin="0,56,0,280">x³</Button>
         <Button x:Name="btnCubicRootX" Style="{DynamicResource calculateButtonT}" Width="89" Height="48" Margin="0,112,0,224">
-            <Image Source="C:\Users\Acer\Desktop\OUTFUN\VS\Calcula\Assets\CubicRootX.png" Width="25" Height="23"></Image>
+            <Image Source="\Assets\CubicRootX.png" Width="25" Height="23"></Image>
         </Button>
         <Button x:Name="btnYRootX" Style="{DynamicResource calculateButtonT}" Width="89" Height="48" Margin="0,168,0,168">
-            <Image Source="C:\Users\Acer\Desktop\OUTFUN\VS\Calcula\Assets\YRootX.png" Width="25" Height="23"></Image>
+            <Image Source="\Assets\YRootX.png" Width="25" Height="23"></Image>
         </Button>
         <Button x:Name="btnTwoX" Style="{DynamicResource calculateButtonT}" Width="89" Height="48" FontSize="18" Margin="0,224,0,112">2ˣ</Button>
         <Button x:Name="btnLogyX" Style="{DynamicResource calculateButtonT}" Width="89" Height="48" FontSize="18" Margin="0,280,0,56">logy x</Button>

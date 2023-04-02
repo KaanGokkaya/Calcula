@@ -1,0 +1,144 @@
+﻿<UserControl x:Class="Calcula.User_Controls.SideBar.SidebarOpened"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Calcula.User_Controls.SideBar"
+             mc:Ignorable="d" 
+             d:DesignHeight="740"
+             d:DesignWidth="250">
+    
+    <UserControl.Resources>
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" SnapsToDevicePixels="true" StrokeThickness="1"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Button.Static.Background" Color="Transparent"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="Transparent"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#242424"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="Transparent"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#323232"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="Transparent"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="Transparent"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="Transparent"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="Transparent"/>
+        <Style x:Key="sideButtonT" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Width" Value="220"></Setter>
+            <Setter Property="Height" Value="20"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="FontFamily" Value="Oxygen"></Setter>
+            <Setter Property="FontSize" Value="10"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" CornerRadius="5,5,5,5" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Border Background="#191919" Height="740" Width="250" CornerRadius="0,15,15,0"></Border>
+        <Border Background="#282828" Width="250" Height="1" Margin="0,697,0,42"></Border>
+        <!--#region Buttons-->
+        <!--#region SideBar-->
+        <Button x:Name="btnSidebar" Style="{DynamicResource calculateButtonT}" Width="40" Height="40" Margin="15,20,195,680" Click="btnSidebarClicked">
+            <Image Source="\Assets\sidebar.png" Height="10" Width="13"></Image>
+        </Button>
+        <Label x:Name="pageNameScientific" Style="{DynamicResource PageName}" Margin="65,23,95,686">Side Bar</Label>
+        <!--#endregion-->
+        <!--#region Calculate Side-->
+        <Button x:Name="btnStandart" Style="{DynamicResource sideButtonT}" Margin="15,100,15,620">Standart</Button>
+        <Button x:Name="btnScientific" Style="{DynamicResource sideButtonT}" Margin="15,130,15,590">Scientific</Button>
+        <Button x:Name="btnGraphic" Style="{DynamicResource sideButtonT}" Margin="15,160,15,560">Graphic</Button>
+        <Button x:Name="btnProgramer" Style="{DynamicResource sideButtonT}" Margin="15,190,15,530">Programer</Button>
+        <Button x:Name="btnDateCalcu" Style="{DynamicResource sideButtonT}" Margin="15,220,15,500">Date Calculator</Button>
+        <!--#endregion-->
+        <!--#region Convert Side-->
+        <Button x:Name="btnArea" Style="{DynamicResource sideButtonT}" Margin="15,280,15,440">Area</Button>
+        <Button x:Name="btnLength" Style="{DynamicResource sideButtonT}" Margin="15,310,15,410">Length</Button>
+        <Button x:Name="btnTemperature" Style="{DynamicResource sideButtonT}" Margin="15,340,15,380">Temperature</Button>
+        <Button x:Name="btnEnergy" Style="{DynamicResource sideButtonT}" Margin="15,370,15,350">Enery</Button>
+        <Button x:Name="btnVolume" Style="{DynamicResource sideButtonT}" Margin="15,400,15,320">Volume</Button>
+        <Button x:Name="btnWeight" Style="{DynamicResource sideButtonT}" Margin="15,430,15,290">Weight</Button>
+        <Button x:Name="btnData" Style="{DynamicResource sideButtonT}" Margin="15,460,15,260">Data</Button>
+        <Button x:Name="btnSpeed" Style="{DynamicResource sideButtonT}" Margin="15,490,15,230">Speed</Button>
+        <Button x:Name="btnPower" Style="{DynamicResource sideButtonT}" Margin="15,520,15,200">Power</Button>
+        <Button x:Name="btnTime" Style="{DynamicResource sideButtonT}" Margin="15,550,15,170">Time</Button>
+        <Button x:Name="btnPressure" Style="{DynamicResource sideButtonT}" Margin="15,580,15,140">Pressure</Button>
+        <Button x:Name="btnAngle" Style="{DynamicResource sideButtonT}" Margin="15,610,15,110">Angle</Button>
+        <Button x:Name="btnCurrency" Style="{DynamicResource sideButtonT}" Margin="15,640,15,80">Currency</Button>
+        <Button x:Name="btnTip" Style="{DynamicResource sideButtonT}" Margin="15,670,15,50">Tip</Button>
+        <!--#endregion-->
+        <!--#region Settings-->
+        <Button x:Name="btnSettings" Style="{DynamicResource sideButtonT}" Height="28" FontSize="13" Margin="15,705,15,7">Ayarlar</Button>
+        <!--#endregion-->
+        <!--#endregion-->
+        <!--#region Labels-->
+        <Label x:Name="lblCalculate" Style="{DynamicResource Result}" FontWeight="Normal" FontSize="16" Margin="25,68,111,644" HorizontalContentAlignment="Left">Calculate Side</Label>
+        <Label x:Name="lblConvert" Style="{DynamicResource Result}" FontWeight="Normal" FontSize="16" Margin="25,247,103,465" HorizontalContentAlignment="Left">Converter Side</Label>
+        <!--#endregion-->
+        <!--#region Icons-->
+        <!--#region Calculate Side-->
+        <Image x:Name="IcoStandart" Source="\Assets\SideBarAssets\standart.png" Width="11" Height="13" Margin="28,103,211,624"></Image>
+        <Image x:Name="IcoScientific" Source="\Assets\SideBarAssets\scientific.png" Width="10" Height="13" Margin="27,133,213,594"></Image>
+        <Image x:Name="IcoGraphic" Source="\Assets\SideBarAssets\graphic.png" Width="13" Height="13" Margin="27,163,210,564"></Image>
+        <Image x:Name="IcoProgramer" Source="\Assets\SideBarAssets\programer.png" Width="13" Height="11" Margin="27,194,210,535"></Image>
+        <Image x:Name="IcoDateCalcu" Source="\Assets\SideBarAssets\dateCalcu.png" Width="11" Height="13" Margin="27,223,212,504"></Image>
+        <!--#endregion-->
+        <!--#region Converter Side-->
+        <Image x:Name="Area" Source="\Assets\SideBarAssets\area.png" Width="13" Height="11" Margin="27,284,210,445"></Image>
+        <Image x:Name="IcoLength" Source="\Assets\SideBarAssets\length.png" Width="13" Height="8" Margin="27,316,210,416"></Image>
+        <Image x:Name="IcoTemperature" Source="\Assets\SideBarAssets\temperature.png" Width="8" Height="13" Margin="29,343,213,384"></Image>
+        <Image x:Name="IcoEnergy" Source="\Assets\SideBarAssets\energy.png" Width="10" Height="13" Margin="28,373,212,354"></Image>
+        <Image x:Name="IcoVolume" Source="\Assets\SideBarAssets\volume.png" Width="11" Height="13" Margin="28,403,211,324"></Image>
+        <Image x:Name="IcoWeight" Source="\Assets\SideBarAssets\weight.png" Width="16" Height="10" Margin="25,435,209,295"></Image>
+        <Image x:Name="IcoData" Source="\Assets\SideBarAssets\data.png" Width="11" Height="13" Margin="28,463,211,264"></Image>
+        <Image x:Name="IcoSpeed" Source="\Assets\SideBarAssets\speed.png" Width="11" Height="13" Margin="28,493,211,234"></Image>
+        <Image x:Name="IcoPower" Source="\Assets\SideBarAssets\power.png" Width="11" Height="13" Margin="28,523,211,204"></Image>
+        <Image x:Name="IcoTime" Source="\Assets\SideBarAssets\time.png" Width="13" Height="13" Margin="26,553,211,174"></Image>
+        <Image x:Name="IcoPressure" Source="\Assets\SideBarAssets\pressure.png" Width="13" Height="11" Margin="26,585,211,144"></Image>
+        <Image x:Name="IcoAngle" Source="\Assets\SideBarAssets\angle.png" Width="13" Height="11" Margin="26,615,211,114"></Image>
+        <Image x:Name="IcoCurrency" Source="\Assets\SideBarAssets\currency.png" Width="13" Height="13" Margin="26,643,211,84"></Image>
+        <Image x:Name="IcoTip" Source="\Assets\SideBarAssets\tip.png" Width="13" Height="13" Margin="26,673,211,54"></Image>
+        <!--#endregion-->
+        <!--#region Settings-->
+        <Image x:Name="IcoSettings" Source="\Assets\SideBarAssets\settings.png" Width="18" Height="18" Margin="24,710,208,12"></Image>
+        <!--#endregion-->
+        <!--#endregion-->
+    </Grid>
+</UserControl>

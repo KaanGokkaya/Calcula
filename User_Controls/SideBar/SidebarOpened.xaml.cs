@@ -1,5 +1,4 @@
-﻿using Calcula.User_Controls.SideBar;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Calcula.Pages
+namespace Calcula.User_Controls.SideBar
 {
     /// <summary>
-    /// Interaction logic for Scientific.xaml
+    /// Interaction logic for SidebarOpened.xaml
     /// </summary>
-    public partial class Scientific : Page
+    public partial class SidebarOpened : UserControl
     {
-        public Scientific()
+        public SidebarOpened()
         {
             InitializeComponent();
-        }
-
-        private void btnSidebarClicked(object sender, RoutedEventArgs e)
-        {
-            sidebar.Content = new SidebarOpened();
         }
     }
 }

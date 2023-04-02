@@ -24,6 +24,26 @@
     <None Remove="Assets\rootX.png" />
     <None Remove="Assets\rootXThin.png" />
     <None Remove="Assets\sidebar.png" />
+    <None Remove="Assets\SideBarAssets\angle.png" />
+    <None Remove="Assets\SideBarAssets\area.png" />
+    <None Remove="Assets\SideBarAssets\currency.png" />
+    <None Remove="Assets\SideBarAssets\data.png" />
+    <None Remove="Assets\SideBarAssets\dateCalcu.png" />
+    <None Remove="Assets\SideBarAssets\energy.png" />
+    <None Remove="Assets\SideBarAssets\graphic.png" />
+    <None Remove="Assets\SideBarAssets\length.png" />
+    <None Remove="Assets\SideBarAssets\power.png" />
+    <None Remove="Assets\SideBarAssets\pressure.png" />
+    <None Remove="Assets\SideBarAssets\programer.png" />
+    <None Remove="Assets\SideBarAssets\scientific.png" />
+    <None Remove="Assets\SideBarAssets\settings.png" />
+    <None Remove="Assets\SideBarAssets\speed.png" />
+    <None Remove="Assets\SideBarAssets\standart.png" />
+    <None Remove="Assets\SideBarAssets\temperature.png" />
+    <None Remove="Assets\SideBarAssets\time.png" />
+    <None Remove="Assets\SideBarAssets\tip.png" />
+    <None Remove="Assets\SideBarAssets\volume.png" />
+    <None Remove="Assets\SideBarAssets\weight.png" />
     <None Remove="Assets\sidebarPressed.png" />
     <None Remove="Assets\YRootX.png" />
   </ItemGroup>
@@ -37,12 +57,32 @@
     <Resource Include="Assets\history.png" />
     <Resource Include="Assets\rootX.png" />
     <Resource Include="Assets\sidebar.png" />
+    <Resource Include="Assets\SideBarAssets\angle.png" />
+    <Resource Include="Assets\SideBarAssets\area.png" />
+    <Resource Include="Assets\SideBarAssets\currency.png" />
+    <Resource Include="Assets\SideBarAssets\data.png" />
+    <Resource Include="Assets\SideBarAssets\dateCalcu.png" />
+    <Resource Include="Assets\SideBarAssets\energy.png" />
+    <Resource Include="Assets\SideBarAssets\graphic.png" />
+    <Resource Include="Assets\SideBarAssets\length.png" />
+    <Resource Include="Assets\SideBarAssets\power.png" />
+    <Resource Include="Assets\SideBarAssets\pressure.png" />
+    <Resource Include="Assets\SideBarAssets\programer.png" />
+    <Resource Include="Assets\SideBarAssets\scientific.png" />
+    <Resource Include="Assets\SideBarAssets\settings.png" />
+    <Resource Include="Assets\SideBarAssets\speed.png" />
+    <Resource Include="Assets\SideBarAssets\standart.png" />
+    <Resource Include="Assets\SideBarAssets\temperature.png" />
+    <Resource Include="Assets\SideBarAssets\time.png" />
+    <Resource Include="Assets\SideBarAssets\tip.png" />
+    <Resource Include="Assets\SideBarAssets\volume.png" />
+    <Resource Include="Assets\SideBarAssets\weight.png" />
     <Resource Include="Assets\sidebarPressed.png" />
     <Resource Include="Assets\YRootX.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="User_Controls\SideBar\" />
+    <Folder Include="User_Controls\HistoryAndMind\" />
   </ItemGroup>
 
 </Project>
