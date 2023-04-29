@@ -24,5 +24,10 @@ namespace Calcula.User_Controls.SideBar
         {
             InitializeComponent();
         }
+
+        private void btnSidebarClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

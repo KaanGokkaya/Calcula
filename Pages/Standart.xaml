@@ -34,7 +34,7 @@
 
         <!--Top Mode open another window and hide current window. Opened window have compact design-->
 
-        <Button x:Name="topMode" Style="{DynamicResource topButtonT}" Margin="290,25,110,685">Top Mode</Button>
+        <Button x:Name="topMode" Style="{DynamicResource topButtonT}" Margin="290,25,110,685" Click="btnTopModeClicked">Top Mode</Button>
         <Button x:Name="history" Style="{DynamicResource topButtonT}" Margin="390,25,10,685">History</Button>
         <!--#endregion-->
         <!--#region Mind Buttons-->

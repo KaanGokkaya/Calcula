@@ -1,4 +1,5 @@
 ﻿using Calcula.User_Controls.SideBar;
+using Calcula.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +29,12 @@ namespace Calcula.Pages
 
         private void btnSidebarClicked(object sender, RoutedEventArgs e)
         {
-            sidebar.Content = new SidebarOpened();
+
+        }
+
+        private void btnTopModeClicked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

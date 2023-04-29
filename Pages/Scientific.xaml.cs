@@ -28,7 +28,7 @@ namespace Calcula.Pages
 
         private void btnSidebarClicked(object sender, RoutedEventArgs e)
         {
-            sidebar.Content = new SidebarOpened();
+
         }
     }
 }
